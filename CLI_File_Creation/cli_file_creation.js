@@ -10,6 +10,7 @@ const filecreation = ()=>{
 
     rl.question("Enter filename = ", (filename) => {
         rl.question("Enter the content for file = " , (content) => {
+            
             fs.writeFile(`${filename}.txt` , `${content}` , (err)=>{
                 if(err){
                     console.error("its a error");
